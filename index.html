@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="box-wrapper">
+            <div class="img">
+                <img id="profile" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiITjaVs92GFha7gu9LTfMI0ABj3D20WxhK9qTwojLErUfFR3zq2_A52liGngv96AvWUq_3ovsMME8M1CFxAB2DsYr4m2BQHBnnwUKpPY9xKYOPv3QqG0lOoVDB18-oQcSDCiRzW7z0sHmKlaJoZpYf8leUSS9zAGUHDT7mg1JeijRToxR-iNsKVnUw/s1600/download.jpg" alt="profile"/>
+            </div>
+            <div class="desc">
+                <h2>Rahul Shah</h2>
+                 <p>Founder | Hacktack.us</p>
+            </div>
+            <div class="buttons">
+                <button onclick="openModal()"><i class="fa-solid fa-share"></i>Share Profile</button>
+                <button>Follow Me</button>
+            </div>
+        </div>
+
+        <!-- modal -->
+        <div class="boxmodal">
+            <div  class="header">
+                <h3>Share My Profile</h3>
+                <i onclick="closeModal()" class="fa-solid fa-xmark"></i>
+            </div>
+            <hr>
+            <p>share this via</p>
+            <div class="socialshare">
+                <a href="">
+                    <i class="fa-brands fa-facebook" style="color: blue;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-twitter" style="color: skyblue;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram" style="color: orangered;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-whatsapp" style="color: greenyellow;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-telegram" style="color: aqua;"></i>
+                </a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <script src="./index.js" type="text/javascript"></script>
+</body>
+</html>
